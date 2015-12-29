@@ -80,7 +80,7 @@ module.exports = {
         gmAPI.directions(util.pickInputs(step, pickInputs), function(err, result) {
             if (err)
                 this.fail(err);
-            if (result.error_message)
+            if (result && result.error_message)
                 this.fail(result.error_message);
             else
                 this.complete(util.pickOutputs(result, pickOutputs));
