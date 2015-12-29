@@ -1,12 +1,13 @@
 {
-    "name": "google-maps-get-time-to-location",
-    "version": "0.0.1",
-    "description": "",
-    "main": "index.js",
-    "author": "Alexander",
-    "license": "ISC",
-    "private": true,
-    "dependencies": {
-        "lodash": "^3.9.3"
-    }
+  "name": "google-maps-get-time-to-location",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "author": "Alexander",
+  "license": "ISC",
+  "private": true,
+  "dependencies": {
+    "googlemaps": "^1.0.2",
+    "lodash": "^3.10.1"
+  }
 }

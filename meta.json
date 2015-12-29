@@ -4,23 +4,54 @@
 {
     //Required. Inputs the module expects.
     "inputs": [
-        //e.g.
-        /*
         {
-            "id": "from",
-            "title":"From"
+            "id": "origin",
+            "title":"Origin"
+        },
+        {
+            "id": "destination",
+            "title":"Destination"
+        },
+        {
+            "id": "avoid",
+            "title":"Avoid"
+        },
+        {
+            "id": "language",
+            "title":"Language"
+        },
+        {
+            "id": "units",
+            "title":"Units"
+        },
+        {
+            "id": "traffic_model",
+            "title":"Traffic Model"
+        },
+        {
+            "id": "transit_mode",
+            "title":"Transit Mode"
+        },
+        {
+            "id": "transit_routing_preference",
+            "title":"Routing Preference"
         }
-        */
     ],
     //Required. Outputs the module emits.
     "outputs": [
-      //e.g.
-      /*
         {
-            "id": "from",
-            "title":"From"
+            "id": "distance",
+            "title":"Distance"
+        },
+        {
+            "id": "duration",
+            "title":"Duration"
+        },
+        {
+            "id": "duration_in_traffic",
+            "title":"Duration in Traffic"
         }
-      */
     ],
+    "icon": "dex-gmaps",
     "title": "Google Maps Get Time to Location" /* Required.A display name for the module */
 }
