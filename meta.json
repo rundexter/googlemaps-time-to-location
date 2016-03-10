@@ -2,7 +2,6 @@
  * Metadata describing the module operation
  */
 {
-    //Required. Inputs the module expects.
     "inputs": [
         {
             "id": "origin",
@@ -37,7 +36,6 @@
             "title":"Routing Preference"
         }
     ],
-    //Required. Outputs the module emits.
     "outputs": [
         {
             "id": "distance",
@@ -53,5 +51,5 @@
         }
     ],
     "icon": "dex-gmaps",
-    "title": "Google Maps Get Time to Location" /* Required.A display name for the module */
+    "title": "Google Maps Get Time to Location" 
 }

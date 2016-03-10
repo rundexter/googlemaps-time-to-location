@@ -4,7 +4,7 @@ var _ = require('lodash')
 
 module.exports = _.merge({
     /*
-     * Some default settings. 
+     * Some default settings.
      *
      * You can generally leave this as is for general testing purposes.
      */
@@ -47,7 +47,7 @@ module.exports = _.merge({
     }
     , user: {
         /*
-         * Your dexter user settings should go in the env.js file and remain uncommitted.  
+         * Your dexter user settings should go in the env.js file and remain uncommitted.
          * For example:
          *
         profile: {
@@ -62,8 +62,8 @@ module.exports = _.merge({
              * You should update this section with some test input for testing your module
              */
             input: {
-                'origin': 'Toronto',
-                'destination': 'Montreal'
+                'origin': 'Barclays Center, Brooklyn, NY',
+                'destination': '29 Little West 12th St New York, NY'
             }
         }
     }
