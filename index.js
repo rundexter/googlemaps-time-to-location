@@ -14,7 +14,7 @@ module.exports = {
      */
     authOptions: function (step, dexter) {
         var authData = {};
-        var credentials = dexter.provider( 'google' ).credentials();
+        var credentials = dexter.provider( 'google' ).credentials() || { };
 
         if ( credentials.server_key || dexter.environment( 'google_server_key' ) ) {
             authData.key = credentials.server_key || dexter.environment( 'google_server_key' );
