@@ -38,11 +38,14 @@ module.exports = {
         var query = {
             origin:         step.input( 'origin' ).first(),
             destination:    step.input( 'destination' ).first(),
+            mode:           step.input( 'mode' ).first(),
             avoid:          step.input( 'avoid' ).first(),
             language:       step.input( 'language' ).first(),
             units:          step.input( 'units' ).first(),
             traffic_model:  step.input( 'traffic_model' ).first(),
             transit_mode:   step.input( 'transit_mode' ).first(),
+            departure_time: step.input( 'departure_time' ).first() || new Date(),
+            arrival_time:   step.input( 'arrival_time' ).first(),
             transit_routing_preference: step.input( 'transit_routing_preference' ).first()
         };
 
@@ -53,7 +56,11 @@ module.exports = {
             if (result && result.error_message)
                 return this.fail(result.error_message);
             else
-                return this.complete(result);
+                var res = {
+                    distance: result.routes[ 0 ].legs[ 0 ].distance.text,
+                    dureation: result.routes[ 0 ].legs[ 0 ].duration.text
+                };
+                return this.complete( res );
         }.bind(this));
     }
 };

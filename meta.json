@@ -12,6 +12,10 @@
             "title":"Destination"
         },
         {
+            "id": "mode",
+            "title": "Travel Mode"
+        },
+        {
             "id": "avoid",
             "title":"Avoid"
         },
@@ -34,7 +38,16 @@
         {
             "id": "transit_routing_preference",
             "title":"Routing Preference"
+        },
+        {
+            "id": "departure_time",
+            "title":"Departure Time"
+        },
+        {
+            "id": "arrival_time",
+            "title":"Arrival Time"
         }
+
     ],
     "outputs": [
         {
@@ -44,12 +57,8 @@
         {
             "id": "duration",
             "title":"Duration"
-        },
-        {
-            "id": "duration_in_traffic",
-            "title":"Duration in Traffic"
         }
     ],
     "icon": "dex-gmaps",
-    "title": "Google Maps Get Time to Location" 
+    "title": "Google Maps Get Time to Location"
 }

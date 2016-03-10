@@ -62,6 +62,7 @@ module.exports = _.merge({
              * You should update this section with some test input for testing your module
              */
             input: {
+                'mode': 'transit',
                 'origin': 'Barclays Center, Brooklyn, NY',
                 'destination': '29 Little West 12th St New York, NY'
             }
