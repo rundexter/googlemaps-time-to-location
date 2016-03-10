@@ -58,7 +58,7 @@ module.exports = {
             else
                 var res = {
                     distance: result.routes[ 0 ].legs[ 0 ].distance.text,
-                    dureation: result.routes[ 0 ].legs[ 0 ].duration.text
+                    duration: result.routes[ 0 ].legs[ 0 ].duration.text
                 };
                 return this.complete( res );
         }.bind(this));
