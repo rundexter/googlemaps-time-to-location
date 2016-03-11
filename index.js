@@ -44,10 +44,13 @@ module.exports = {
             units:          step.input( 'units' ).first(),
             traffic_model:  step.input( 'traffic_model' ).first(),
             transit_mode:   step.input( 'transit_mode' ).first(),
-            departure_time: step.input( 'departure_time' ).first() || new Date(),
-            arrival_time:   step.input( 'arrival_time' ).first(),
             transit_routing_preference: step.input( 'transit_routing_preference' ).first()
         };
+
+        if ( query.mode === 'driving' || query.mode === 'transit' ) {
+            query.departure_time = step.input( 'departure_time' ).first() || new Date(),
+            query.arrival_time   = step.input( 'arrival_time' ).first()
+        }
 
         var gmAPI = new GoogleMapsAPI( auth );
         gmAPI.directions( query, function(err, result) {
